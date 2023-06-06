@@ -79,11 +79,12 @@ h1 {
 }
 
 h2 {
-  color: #19f7fd;
-  font-size: 130%;
+  color:#19f7fd;
+  font-size: 145%;
   font-family: Bruno Ace, Serif;
   text-decoration: none;
 }
+
 
 
 nav ul {
@@ -126,6 +127,21 @@ nav a {
   justify-content: center;
   text-align: center;
   margin: 10px;
+}
+
+.meu-botao {
+  display: inline-block;
+  margin: 6.5%;
+  margin-bottom: 6% ;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(45deg, #19f7fd, #7e78ff, #ea15ff);
+  border-radius: 6px;
+  border: none;
+  transition: background-color 0.3s ease;
 }
 
 /* Estilos para a grade de botões em desktops */
@@ -192,7 +208,7 @@ main a {
 
   margin: 3.5%;
   margin-left: 9%;
-  margin-right: 10%;
+  margin-right: 9%;
   border-radius: 235px;
 
   border: 4px solid transparent;
@@ -202,10 +218,22 @@ main a {
     linear-gradient(260deg, #19f7fd, #7e78ff, #ea15ff) border-box;
 
   padding: 45px;
+  padding-left:80px ;
   padding-top: 10px;
   padding-bottom: 10px;
 
 }
+
+center h2{
+  margin: 2%; 
+  margin-top: 7%;
+}
+
+center img{
+  margin: 2%;
+}
+
+
 
 aside {
 
@@ -224,8 +252,8 @@ aside {
 }
 
 aside p{
-  
-
+  margin: 2%;
+  text-align: justify;
   font-size: 120%;
   color: white;
 }
@@ -245,21 +273,48 @@ aside h1{
   text-align: center;
 }
 
+aside h2{
+  color:white;
+   }
 
-@media (max-width: 768px) {
+
+@media (max-width: 1200px) {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  .transparente {
-    height: 50px;
-    width: 0px;
+  .titulo {
+  
+    margin-left: 6%;
+  margin-right: 6%;
   }
+  .meu-botao {
+  margin: 6.5%;
+  margin-bottom: 10% ;
 }
 
-@media (min-width: 0px) and (max-width: 768px) {
+center h2{
+  margin: 5%; 
+  margin-top: 10%;
+}
+
+center img{
+  margin: 2%;
+}
+
+  nav a {
+    font-size: 365%;
+      padding-left:30px ;
+      padding-right:30px ;
+  }
+
+  main h{
+    font-family: Bebas Neue;
+    font-size: 40px; 
+  }
+
   .transparente {
-    height: 50px;
+    height: 230px;
     width: 0px;
   }
 }
